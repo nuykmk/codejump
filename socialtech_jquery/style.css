@@ -1,0 +1,839 @@
+img {
+  max-width: 100%;
+}
+body {
+  font-family: ' Source Sans Pro ', 'Hiragino Kaku Gothic ProN', Meiryo, Arial,
+    sans-serif;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.carousel {
+  width: auto;
+  margin: 0 auto;
+  /* margin-left: 20px; */
+  padding: 0 3%;
+}
+.carouselImg {
+  width: 100%;
+}
+p {
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+/* ヘッダー */
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  padding-left: 0;
+}
+.nav-list a {
+  margin-left: 20px;
+  color: #0d0d0d;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* メインビジュアル */
+.mv-contents {
+  position: relative;
+  height: 400px;
+}
+.mv-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2720d5;
+  color: #ffffff;
+  border-radius: 0 0 476px 0;
+  max-width: 620px;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+.mv-title {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 20% 6% 3% 6%;
+}
+.mv-text {
+  font-size: 28px;
+  margin: 0 6% 3% 6%;
+}
+
+.mv-contents img {
+  max-width: 620px;
+  border-radius: 476px 0 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* mission */
+.mission-wrapper {
+  margin: 80px auto;
+}
+.mission-contents {
+  display: flex;
+}
+.section-title {
+  margin-top: 40px;
+
+  font-size: 27px;
+  font-weight: bold;
+  &::after {
+    content: url(img/line.png);
+    padding-left: 10px;
+  }
+}
+.item-title {
+  font-size: 27px;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+.mission-item1,
+.mission-item2 {
+  width: 50%;
+  margin: 20px;
+}
+.item-text {
+  margin-bottom: 20px;
+}
+.mission-photo {
+  width: 100%;
+}
+.s2dgs {
+  margin-top: 50px;
+  width: 100%;
+}
+/* product */
+.product-wrapper {
+  background-color: #fafafa;
+  margin: 80px 0;
+  padding: 10px 40px 0px 40px;
+}
+.product-contents {
+  margin-top: 40px;
+  display: flex;
+}
+.product-contents-left {
+  width: 50%;
+  margin-right: 20px;
+}
+.product-contents-right {
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 80px;
+}
+.product-contents-left > div {
+  position: relative;
+  height: 480px;
+  margin-right: 15px;
+}
+.product-contents-right > div {
+  position: relative;
+  height: 480px;
+  margin-left: 15px;
+}
+.product-photo {
+  width: 100%;
+}
+.product-explain {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  margin: 0 35px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+.item-category {
+  color: #2710d5;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+.product-explain > .item-title {
+  margin: 10px 0;
+}
+.product-explain > .item-text {
+  font-size: 14px;
+  margin: 0;
+}
+#product-more {
+  text-align: center;
+}
+#product-more a {
+  position: relative;
+  bottom: -42px;
+}
+/* about us */
+.aboutus-wrapper {
+  margin: 80px auto;
+}
+.aboutus-contents {
+  display: flex;
+}
+.aboutus-photo {
+  width: 50%;
+  align-self: flex-start;
+}
+.aboutus-photo2 {
+  margin-top: 50px;
+  width: 100%;
+}
+.culture-table {
+  margin-right: 50px;
+  width: 50%;
+}
+.culture-num {
+  font-size: 80px;
+  color: #2710d5;
+  padding-right: 20px;
+}
+.culture-table th {
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.culture-table .item-category {
+  font-size: 24px;
+}
+.culture-table .item-text {
+  margin: 0;
+}
+/* vision */
+.vision-wrapper {
+  margin: 80px auto;
+}
+.vision-contents {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.vision-item {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.vision-img {
+  width: 100%;
+  position: relative;
+  z-index: 30;
+}
+.vision-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 31;
+  margin-right: 20px;
+}
+.title-en {
+  color: #2710d5;
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 80px;
+  &::first-letter {
+    font-size: 40px;
+  }
+}
+.message-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.message-text {
+  margin-top: 10px;
+}
+/* company */
+.company-wrapper {
+  margin: 80px auto;
+}
+.company-table {
+  width: 100%;
+}
+.tableheader {
+  text-align: left;
+  padding: 30px 20px;
+  border-bottom: 1px solid#2710d5;
+  width: 100px;
+}
+.tableheader-first {
+  border-top: 1px solid#2710d5;
+}
+.tableheader-second {
+  padding-top: 40px;
+}
+.cell {
+  padding: 30px;
+  border-bottom: 1px solid #ececec;
+}
+.cell-first {
+  border-top: 1px solid #ececec;
+}
+.company-wrapper > iframe {
+  width: 100%;
+  height: 368px;
+  margin-top: 40px;
+}
+/* contact */
+.radiobutton,
+.checkbox,
+#prefecture {
+  appearance: auto;
+}
+.contact-wrapper {
+  margin: 80px auto;
+}
+.contact-form > .contact-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+.contact-heading {
+  width: 240px;
+  align-self: center;
+}
+.contact-label {
+  font-weight: bold;
+}
+.contact-span {
+  color: #ce2222;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.contact-textbox {
+  border-bottom: 1px solid #707070;
+  background-color: #fafafa;
+  width: 400px;
+  height: 56px;
+}
+.contact-textarea {
+  border-bottom: 1px solid #707070;
+  background-color: #fafafa;
+  width: 400px;
+  height: 200px;
+}
+.contact-wrapper dt {
+  font-weight: bold;
+}
+.contact-wrapper dd {
+  margin-bottom: 16px;
+  line-height: 1.5rem;
+}
+
+.contact-wrapper dd ul {
+  padding-left: 0;
+}
+.contact-wrapper dd li {
+  /* margin-bottom: 0; */
+  list-style: none;
+}
+
+/* footer */
+.footer-wrapper {
+  background-color: #0d0d0d;
+  text-align: center;
+  padding: 80px 80px 30px 80px;
+}
+.footer-logo img {
+  margin-bottom: 30px;
+}
+.footer-nav {
+  margin-bottom: 50px;
+}
+.footer-nav a {
+  color: #ffffff;
+  margin: 10px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.footer-sns {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.footer-sns a {
+  margin-right: 30px;
+}
+.copyright {
+  color: #ffffff;
+  margin: 0;
+}
+
+#nav-sp,
+#menu-sp {
+  display: none;
+}
+
+/* mission.html用スタイル */
+/* ミッションのメインビジュアル */
+.mission-inner {
+  background-image: url(img/mission/mission-main.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.mission-title,
+.product-title {
+  background-color: #2710d5;
+  width: 368px;
+  color: #ffffff;
+  height: 496px;
+  border-radius: 0 248px 248px 0;
+  position: relative;
+}
+.main-title {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 80px 0;
+}
+.main-title > span {
+  font-size: 26px;
+}
+.mission-text,
+.product-text {
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  font-size: 16px;
+  margin: 15px 0;
+}
+.mission-s2dgs {
+  padding: 20px;
+}
+.mission-h2 {
+  color: #2710d5;
+  font-size: 40px;
+  font-weight: bold;
+}
+.mission-p {
+  margin: 15px 0;
+}
+.five-goals-wrapper {
+  padding: 20px;
+  display: flex;
+}
+.five-goals-img {
+  width: 30%;
+  padding: 20px;
+}
+.five-goals-img img {
+  width: 100%;
+}
+.five-goals-read {
+  width: 70%;
+  padding: 20px;
+}
+.fivegoals-item {
+  margin-bottom: 40px;
+}
+.fivegoals-img-right {
+  float: right;
+  margin: 20px;
+}
+.fivegoals-img-left {
+  float: left;
+  margin: 20px;
+}
+.fivegoals-num {
+  color: #2710d5;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+.fivegoals-h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.fivegoals-p {
+  margin-top: 10px;
+}
+
+/* product.html用スタイル */
+
+.product-main-inner {
+  background-image: url(img/product/product-main.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.product-section {
+  display: flex;
+  padding: 20px 20px 0;
+}
+.product-section .product-section-img {
+  width: 450px;
+}
+.product-section-left .product-section-img img {
+  width: 100%;
+  padding: 0 40px 30px 0;
+  border-radius: 0 432px 0 0;
+}
+.product-section-left .product-read {
+  width: 50%;
+  flex-grow: 1;
+}
+.product-section-left .product-read p {
+  margin-bottom: 0;
+}
+
+/* 右が画像のセクション*/
+.product-section-right {
+  justify-content: space-between;
+}
+
+.product-section-right .product-section-img img {
+  width: 100%;
+  padding: 0 0 30px 40px;
+  border-radius: 432px 0 0 0;
+}
+
+.product-section-right .product-read {
+  width: 500px;
+}
+.product-read .section-title {
+  color: #2710d5;
+  font-size: 24px;
+  margin: 0;
+}
+.product-read .item-title {
+  margin: 10px 0;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 767px) {
+  /* スマートフォン用のスタイルを指定する */
+  /* PC用ナビゲーション非表示 */
+
+  #nav-pc {
+    display: none;
+  }
+  #menu-sp {
+    display: block;
+    background-color: transparent;
+    float: right;
+    padding: 0;
+  }
+  #nav-sp {
+    background-color: #2710d5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 100;
+  }
+  #close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+  }
+  #nav-sp nav ul {
+    padding-left: 0;
+  }
+  #logo-sp {
+    margin: 80px 0 30px 20px;
+  }
+
+  #nav-sp nav a {
+    display: block;
+    color: #ffffff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  #nav-sp .menu {
+    text-decoration: none;
+    margin: 0 20px;
+    height: 44px;
+    font-size: 16px;
+    background-image: url(img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  #sns {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  #sns a {
+    margin-right: 30px;
+  }
+  /* mv */
+  .mv-contents {
+    position: relative;
+    height: 470px;
+  }
+  .mv-contents > div {
+    text-align: center;
+    height: 250px;
+  }
+  .mv-contents h1 {
+    font-size: 28px;
+    margin-top: 90px;
+  }
+  .mv-contents > div > p {
+    margin: 0;
+    font-size: 15px;
+  }
+  .mv-contents > img {
+    width: 100%;
+    border-radius: 476px 0 0 0;
+    top: auto;
+    bottom: 0;
+  }
+  /* mission */
+  .section-title {
+    margin: 15px 0;
+  }
+  .item-title {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .mission-wrapper {
+    margin: 20px 2%;
+  }
+  .mission-contents {
+    flex-direction: column;
+  }
+  .mission-item1,
+  .mission-item2 {
+    width: 100%;
+    margin: 0;
+  }
+  /* product */
+  .product-wrapper {
+    margin: 0;
+    padding: 10px 20px 0 20px;
+  }
+  .product-contents {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .product-contents-left,
+  .product-contents-right {
+    width: 100%;
+    margin: 0;
+  }
+  .product-contents-left > div,
+  .product-contents-right > div {
+    margin: 0;
+    height: auto;
+  }
+  .product-explain {
+    position: relative;
+    margin: 0;
+  }
+  #product-more {
+    text-align: left;
+  }
+  .aboutus-wrapper {
+    margin: 120px 20px;
+  }
+  .aboutus-contents {
+    flex-direction: column;
+  }
+  .culture-table th {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+  .item-category {
+    font-size: 16px;
+  }
+  .culture-table {
+    margin-right: 0;
+    padding-right: 20px;
+    order: 2;
+    width: 100%;
+  }
+  .aboutus-photo {
+    width: 100%;
+    order: 1;
+  }
+  .aboutus-photo2 {
+    margin-top: 10px;
+  }
+  .culture-num {
+    padding: 0;
+  }
+  /* vision */
+  .vision-wrapper {
+    margin: 80px 20px;
+  }
+  .title-en {
+    margin-top: 80px;
+  }
+  .vision-item {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .vision-item > img {
+    height: 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  /* company */
+  .company-wrapper {
+    margin: 0 20px;
+  }
+  .company-wrapper > .item-title {
+    margin-bottom: 20px;
+  }
+  .tableheader {
+    width: 50px;
+  }
+  .cell {
+    padding: 20px;
+    vertical-align: middle;
+  }
+  .company-wrapper > iframe {
+    height: 240px;
+  }
+  /* contact */
+  .contact-wrapper {
+    margin: 80px 20px;
+  }
+  .contact-form > .contact-item {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .contact-heading {
+    align-self: auto;
+    margin-bottom: 20px;
+  }
+  .contact-textbox {
+    min-width: 300px;
+    width: 100%;
+  }
+  .contact-textarea {
+    height: 150px;
+    width: 100%;
+  }
+  /* footer */
+  .footer-wrapper {
+    padding: 30px 20px 50px 20px;
+    text-align: left;
+  }
+  .footer-nav a {
+    margin: 0 20px 30px 0;
+    display: block;
+    background-image: url(img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  .footer-sns {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .copyright {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+  /* mission.html */
+  .mission-main-wrapper,
+  .product-main-wrapper {
+    height: 256px;
+    margin-top: 4%;
+    position: relative;
+  }
+  .mission-inner,
+  .product-main-inner {
+    height: 80%;
+    background-size: cover;
+  }
+  .mission-title,
+  .product-title {
+    width: 136px;
+    height: 256px;
+    position: absolute;
+    top: -10%;
+  }
+  .main-title {
+    font-size: 40px;
+    left: 20px;
+    margin: 40px 0;
+  }
+  .mission-title span,
+  .product-title span {
+    font-size: 18px;
+  }
+  .mission-text,
+  .product-text {
+    top: 180px;
+    left: 20px;
+    font-size: 13px;
+  }
+  .mission-h2 {
+    font-size: 38px;
+    margin: 0;
+    &::after {
+      content: none;
+    }
+  }
+  .mission-s2dgs > img,
+  .product-section .product-section-img {
+    width: 100%;
+  }
+  .five-goals-wrapper,
+  .product-section {
+    flex-direction: column;
+  }
+  .five-goals-wrapper > div {
+    padding: 0;
+  }
+  .five-goals-img,
+  .five-goals-read,
+  .product-section .product-section-img img {
+    width: 100%;
+    padding: 0;
+  }
+  .fivegoals-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .fivegoals-img-right,
+  .fivegoals-img-left {
+    align-self: center;
+  }
+  .product-section-left .product-section-img img {
+    border-radius: 0 300px 0 0;
+  }
+  .product-section-left .product-read {
+    width: 100%;
+    flex-grow: 1;
+  }
+  .product-section-right .product-section-img img {
+    order: 1;
+    border-radius: 300px 0 0 0;
+  }
+  .product-section-right .product-read {
+    order: 2;
+    width: 100%;
+  }
+  .product-read-last {
+    padding-bottom: 15px;
+  }
+  .product-read .section-title {
+    margin-top: 10px;
+  }
+}
