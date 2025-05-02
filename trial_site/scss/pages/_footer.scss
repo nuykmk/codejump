@@ -1,0 +1,15 @@
+@use '../globals' as *;
+// ----------------------------------
+// footer
+// ----------------------------------
+.footer {
+  background-color: $cMain;
+  padding: 50px 0 35px;
+  .footer__wrapper {
+    text-align: center;
+    color: $cBase;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
